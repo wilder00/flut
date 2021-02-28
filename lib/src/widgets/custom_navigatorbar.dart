@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final currentIndex = 0;
+
     return BottomNavigationBar(
       //nos dirá cuál es elemento seleccionado
-      currentIndex: 0,
+      currentIndex: currentIndex,
       elevation: 1,
       //requiere de por lo menos 2 elementos
       items: <BottomNavigationBarItem>[
