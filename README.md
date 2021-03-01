@@ -20,3 +20,13 @@ samples, guidance on mobile development, and a full API reference.
 ### provider
 
 Nos permite centralizar los datos
+
+### flutter_barcode_scanner 1.0.2
+
+nos permitirá crear barcodes reader y para instalarla [link](https://pub.dev/packages/flutter_barcode_scanner)
+
+## Herramientas Usadas
+
+### QRCode
+
+Nos permite generar código QR [link](https://www.qrcode.es/es/generador-qr-code/)
