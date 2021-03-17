@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_reader/src/pages/home_page.dart';
 import 'package:qr_reader/src/pages/mapa_page.dart';
+import 'package:qr_reader/src/providers/scan_list_provider.dart';
 import 'package:qr_reader/src/providers/ui_provider.dart';
 
 void main() => runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       providers: [
         //el create es una funcion que se va a ejecutar cuando no hay ninguna instancia de providers creado
         ChangeNotifierProvider(create: (_) => new UiProvider()),
+        ChangeNotifierProvider(create: (_) => new ScanLisProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
