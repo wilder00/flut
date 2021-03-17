@@ -30,6 +30,8 @@ dependencies:
   # añadidos por mi
   provider: ^4.3.3
   flutter_barcode_scanner: ^1.0.2
+  path_provider: ^1.6.24 #permitirá obtener rutas para saber dónde estará la base de datos
+  sqflite: ^1.3.2+1 # plugin para el use de la base de datos
 
 dev_dependencies:
   flutter_test:

@@ -30,3 +30,7 @@ nos permitirá crear barcodes reader y para instalarla [link](https://pub.dev/pa
 ### QRCode
 
 Nos permite generar código QR [link](https://www.qrcode.es/es/generador-qr-code/)
+
+### SQLiteBrowser:
+
+para guardar archivos en base de datos [enlace](https://sqlitebrowser.org/dl/);
