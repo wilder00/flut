@@ -28,6 +28,26 @@ class _MapaPageState extends State<MapaPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Mapa'),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.location_disabled,
+              //color: Theme.of(context).iconTheme.color,
+              color: Colors.white,
+            ),
+            onPressed: () async {
+              final GoogleMapController controller = await _controller.future;
+              controller.animateCamera(
+                CameraUpdate.newCameraPosition(
+                  CameraPosition(
+                    target: scan.getLatLng(),
+                    zoom: 17.5,
+                  ),
+                ),
+              );
+            },
+          )
+        ],
       ),
       body: GoogleMap(
         mapType: MapType.normal,
