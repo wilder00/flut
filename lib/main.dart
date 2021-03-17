@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       providers: [
         //el create es una funcion que se va a ejecutar cuando no hay ninguna instancia de providers creado
         ChangeNotifierProvider(create: (_) => new UiProvider()),
-        ChangeNotifierProvider(create: (_) => new ScanLisProvider()),
+        ChangeNotifierProvider(create: (_) => new ScanListProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

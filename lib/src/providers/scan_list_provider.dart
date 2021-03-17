@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:qr_reader/src/models/scan_model.dart';
 import 'package:qr_reader/src/providers/db_provider.dart';
 
-class ScanLisProvider extends ChangeNotifier {
+class ScanListProvider extends ChangeNotifier {
   List<ScanModel> scans = [];
   String tipoSeleccionado = 'http';
 
