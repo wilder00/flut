@@ -51,6 +51,11 @@ class _MapaPageState extends State<MapaPage> {
         ],
       ),
       body: GoogleMap(
+        zoomControlsEnabled: false,
+        /* tiltGesturesEnabled: true,
+        buildingsEnabled: true,
+        mapToolbarEnabled: true, */
+        trafficEnabled: false,
         mapType: mapType,
         markers: markers,
         initialCameraPosition: puntoInicial,
